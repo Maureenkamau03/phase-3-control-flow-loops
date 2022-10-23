@@ -3,12 +3,12 @@
    counting down to 1. After reaching 1, print out "Happy New Year!"
 */
 function happyNewYear() {
-  let counter = 10;
-  while (counter > 0) {
-    console.log(counter);
-    counter--;
-  }
-  console.log("Happy New Year!");
+	let counter = 10;
+	while (counter > 0) {
+		console.log(counter);
+		counter--;
+	}
+	console.log("Happy New Year!");
 }
 
 /* 
@@ -18,21 +18,21 @@ function happyNewYear() {
   print "FizzBuzz".
 */
 function fizzbuzzPrinter() {
-  for (let num = 1; num <= 100; num++) {
-    console.log(fizzbuzz(num));
-  }
+	for (let num = 1; num <= 100; num++) {
+		console.log(fizzbuzz(num));
+	}
 }
 
 function fizzbuzz(num) {
-  if (num % 3 === 0 && num % 5 === 0) {
-    return "FizzBuzz";
-  } else if (num % 3 === 0) {
-    return "Fizz";
-  } else if (num % 5 === 0) {
-    return "Buzz";
-  } else {
-    return num;
-  }
+	if (num % 3 === 0 && num % 5 === 0) {
+		return "FizzBuzz";
+	} else if (num % 3 === 0) {
+		return "Fizz";
+	} else if (num % 5 === 0) {
+		return "Buzz";
+	} else {
+		return num;
+	}
 }
 
 /*
@@ -41,9 +41,9 @@ function fizzbuzz(num) {
   characters in the input string and reverse it.
 */
 function reverseString(str) {
-  let reversedStr = "";
-  for (let i = 0; i < str.length; i++) {
-    reversedStr = str[i] + reversedStr;
-  }
-  return reversedStr;
+	let reversedStr = "";
+	for (let i = 0; i < str.length; i++) {
+		reversedStr = str[i] + reversedStr;
+	}
+	return reversedStr;
 }
